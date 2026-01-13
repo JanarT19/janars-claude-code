@@ -1,6 +1,10 @@
-# Janar's Claude Code Setup
+# Janar's Claude Code Marketplace
 
-My personal Claude Code configuration for productive web development. This plugin provides **19 slash commands** and **11 specialized AI agents** to supercharge your development workflow.
+My personal plugins for productive development.
+
+## Plugins
+
+-   `janars-setup`: This plugin provides **19 slash commands** and **11 specialized AI agents** to supercharge your development workflow.
 
 ## Quick Install
 
@@ -8,8 +12,8 @@ My personal Claude Code configuration for productive web development. This plugi
 # Step 1: Add the marketplace
 /plugin marketplace add JanarT19/janars-claude-code
 
-# Step 2: Install the plugin
-/plugin install janars-claude-code
+# Step 2: Install the plugin(s)
+/plugin install janars-setup@janars-claude-code
 ```
 
 ## What's Inside
@@ -27,20 +31,24 @@ My personal Claude Code configuration for productive web development. This plugi
 ### 🔌 API Commands
 
 **FastAPI:**
+
 -   `/api-new-fastapi` - Create FastAPI endpoints with controller, service, and DTOs
 -   `/api-test` - Test API endpoints
 -   `/api-protect` - Add protection & validation
 
 **Next.js:**
+
 -   `/api-new-nextjs` - Create Next.js API routes with validation and TypeScript
 
 ### 🎨 UI Commands
 
 **React:**
+
 -   `/component-new-react` - Create React components with Material-UI
 -   `/page-new-react` - Create React pages with routing
 
 **Next.js:**
+
 -   `/component-new-nextjs` - Create Next.js components
 -   `/page-new-nextjs` - Create Next.js pages
 
@@ -72,27 +80,14 @@ My personal Claude Code configuration for productive web development. This plugi
 
 ## Installation
 
-### From GitHub (Recommended)
+### From GitHub
 
 ```bash
 # Add marketplace
 /plugin marketplace add JanarT19/janars-claude-code
 
-# Install plugin
-/plugin install janars-claude-code
-```
-
-### From Local Clone (for development)
-
-```bash
-git clone https://github.com/JanarT19/janars-claude-code.git
-cd janars-claude-code
-
-# Add as local marketplace
-/plugin marketplace add /path/to/janars-claude-code
-
-# Install plugin
-/plugin install janars-claude-code
+# Install plugin(s)
+/plugin install janars-setup@janars-claude-code
 ```
 
 ## Best For
@@ -115,12 +110,14 @@ cd janars-claude-code
 ### Creating an API
 
 **For FastAPI:**
+
 ```bash
 /api-new-fastapi
 # Claude will scaffold controller, service, DTOs, and entity following your project patterns
 ```
 
 **For Next.js:**
+
 ```bash
 /api-new-nextjs
 # Claude will create Next.js API route with Zod validation and TypeScript
@@ -129,6 +126,7 @@ cd janars-claude-code
 ### Creating UI Components
 
 **For React with Material-UI:**
+
 ```bash
 /component-new-react
 # Creates React component with MUI patterns
@@ -167,10 +165,6 @@ This setup emphasizes:
 
 -   Claude Code 2.0.13+
 -   Works with any project (optimized for Next.js + FastAPI + PostgreSQL)
-
-## Customization
-
-After installation, you can customize any command by editing files in `.claude/commands/` and `.claude/agents/`.
 
 ## Contributing
 
