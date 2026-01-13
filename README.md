@@ -16,6 +16,28 @@ My personal plugins for productive development.
 /plugin install janars-setup@janars-claude-code
 ```
 
+## Environment Variables
+
+Using API key instead of logging in via /login? Add your Anthropic Claude API key as follows:
+
+```bash
+# --------------
+# For Claude Code CLI
+# --------------
+cd ~/.claude
+
+# Use files in this repo as reference:
+nano api_key.sh
+nano settings.json
+
+
+# --------------
+# For VS Code Extension
+# --------------
+# Modify settings.json:
+"apiKeyHelper": "echo API_KEY_HERE", # (this will also support the CLI version)
+```
+
 ## What's Inside
 
 ### 📋 Development Commands

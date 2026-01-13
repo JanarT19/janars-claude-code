@@ -1,11 +1,14 @@
 {
     "$schema": "https://json.schemastore.org/claude-code-settings.json",
 
+    "apiKeyHelper": "bash ~/.claude/api_key.sh",
+
     "enabledPlugins": {
         "playwright@claude-plugins-official": true,
         "context7@claude-plugins-official": true,
         "janars-setup@janars-claude-code": true
     },
+
     "autoUpdatesChannel": "latest",
     "alwaysThinkingEnabled": false,
 
