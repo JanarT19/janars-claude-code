@@ -1,0 +1,46 @@
+{
+    "$schema": "https://json.schemastore.org/claude-code-settings.json",
+    "statusLine": {
+        "type": "command",
+        "command": "/path/to/your/statusline",
+        "padding": 0
+    },
+    "alwaysThinkingEnabled": false,
+    "permissions": {
+        "allow": [
+            "WebFetch",
+            "Glob",
+            "Grep",
+            "Edit(/src/**/*)",
+            "Edit(*.md)",
+            "Write(/src/**/*)",
+
+            "Bash(command:npm install *)",
+            "Bash(command:npm test)",
+            "Bash(command:npm run *)",
+
+            "Bash(command:pytest *)",
+
+            "Bash(command:git status)",
+            "Bash(command:git diff *)",
+            "Bash(command:git log *)",
+
+            "Bash(command:ls *)",
+            "Bash(command:cp *)",
+            "Bash(command:mv *)",
+            "Bash(command:cat *)",
+            "Bash(command:mkdir *)",
+            "Bash(command:touch *)",
+            "Bash(command:docker *)",
+            "Bash(command:docker-compose *)",
+            "Bash(command:pip install *)",
+            "Bash(command:pip list)",
+
+            "Bash(command:node *)",
+            "Bash(command:python *)"
+        ],
+        "deny": ["Bash(command:sudo *)", "Read(*.env)"],
+        "ask": ["Bash(command:rm *)"],
+        "defaultMode": "default"
+    }
+}

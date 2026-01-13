@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Local settings (users should not commit these)
+.claude/settings.local.json
+
+tmpclaude-*
