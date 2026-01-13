@@ -1,5 +1,5 @@
 {
-    "name": "janars-claude-code",
+    "name": "janars-setup",
     "version": "1.0.0",
     "description": "Janar's personal Claude Code setup with productivity commands and specialized AI agents for FastAPI, React, Next.js, and PostgreSQL development",
     "author": {

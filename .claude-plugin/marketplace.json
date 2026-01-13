@@ -1,0 +1,13 @@
+{
+    "name": "janars-claude-code",
+    "owner": {
+        "name": "Janar"
+    },
+    "plugins": [
+        {
+            "name": "janars-setup",
+            "source": "./plugins/janars-setup",
+            "description": "Janar's personal Claude Code setup with productivity commands and specialized AI agents for FastAPI, React, Next.js, and PostgreSQL development"
+        }
+    ]
+}
